@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import { Provider as PaperProvider, DefaultTheme } from "react-native-paper";
+import { StatusBar } from "expo-status-bar";
+import NotificationScreen from './Screens/NotificationScreen'
+
+const paperTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: "#FFD300",     // Bee gold
+    background: "#0a0a0a",  // Deep black
+    surface: "#1a1a1a",
+    text: "#FFD300",
+    placeholder: "#aaa",
+  },
+};
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={paperTheme}>
+      <StatusBar style="light" />
+      <NotificationScreen />
+    </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
