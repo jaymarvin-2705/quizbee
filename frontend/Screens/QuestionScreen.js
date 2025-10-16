@@ -77,42 +77,41 @@ export default function QuizScreen() {
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
     padding: 20,
-    backgroundColor: "#000000", // dark background
+    backgroundColor: "#000000",
   },
   question: {
     fontSize: 22,
     fontWeight: "bold",
     marginBottom: 20,
     textAlign: "center",
-    color: "#FFD700", // golden yellow text
+    color: "#FFD700",
   },
   optionButton: {
-    backgroundColor: "#FFD700", // default button color (gold)
+    backgroundColor: "#FFD700",
     padding: 12,
     borderRadius: 10,
     marginVertical: 8,
   },
   optionText: {
     fontSize: 18,
-    color: "#000000", // black text
+    color: "#000000",
     textAlign: "center",
     fontWeight: "bold",
   },
   correctOption: {
-    backgroundColor: "#32CD32", // green for correct
+    backgroundColor: "#32CD32", // green
   },
   wrongOption: {
-    backgroundColor: "#FF3B3B", // red for wrong
+    backgroundColor: "#FF3B3B", // red
   },
   counter: {
     marginTop: 30,
     textAlign: "center",
-    color: "#FFFFFF", // white counter text
+    color: "#FFFFFF",
   },
 });
