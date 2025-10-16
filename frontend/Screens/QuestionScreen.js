@@ -77,7 +77,6 @@ export default function QuizScreen() {
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -90,10 +89,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 20,
     textAlign: "center",
-    color: "#FFD700", // golden yellow text
+    color: "#FFD700", // golden text
   },
   optionButton: {
-    backgroundColor: "#FFD700", // default button color (gold)
+    backgroundColor: "#FFD700", // gold buttons
     padding: 12,
     borderRadius: 10,
     marginVertical: 8,
