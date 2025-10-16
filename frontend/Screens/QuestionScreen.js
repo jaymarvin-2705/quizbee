@@ -82,36 +82,36 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 20,
-    backgroundColor: "#000000",
+    backgroundColor: "#000000", // dark background
   },
   question: {
     fontSize: 22,
     fontWeight: "bold",
     marginBottom: 20,
     textAlign: "center",
-    color: "#FFD700",
+    color: "#FFD700", // golden text
   },
   optionButton: {
-    backgroundColor: "#FFD700",
+    backgroundColor: "#FFD700", // gold buttons
     padding: 12,
     borderRadius: 10,
     marginVertical: 8,
   },
   optionText: {
     fontSize: 18,
-    color: "#000000",
+    color: "#000000", // black text
     textAlign: "center",
     fontWeight: "bold",
   },
   correctOption: {
-    backgroundColor: "#32CD32", // green
+    backgroundColor: "#32CD32", // green for correct
   },
   wrongOption: {
-    backgroundColor: "#FF3B3B", // red
+    backgroundColor: "#FF3B3B", // red for wrong
   },
   counter: {
     marginTop: 30,
     textAlign: "center",
-    color: "#FFFFFF",
+    color: "#FFFFFF", // white counter text
   },
 });
